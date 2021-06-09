@@ -1,4 +1,10 @@
 <?php
+session_start();
+$logedin=false;
+if($_SESSION['loggedin']&&$_SESSION['loggedin']==true)
+{
+  $logedin=true;
+}
 echo ' <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 <div class="container-fluid">
   <a class="navbar-brand" href="./">phpForum</a>
@@ -31,11 +37,22 @@ echo ' <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-success" type="submit">Search</button>
-    </form>
-    <button class="btn btn-outline-success mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+    </form>';
+    if($logedin)
+    {
+      $user_name=$_SESSION['user_name'];
+      echo '<p class="text-light mx-2 my-0">Welcome '.$user_name.'</p>
+      <button class="btn btn-outline-success" type="submit"><a class="text-light" href="./partials/logout.php">Logout</a></button>
+      ';
+    }
+    else{
+      echo '
+      <button class="btn btn-outline-success mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
     <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
-
-  </div>
+    
+      ';
+    }
+  echo '</div>
 </div>
 </nav>
 ';
@@ -43,4 +60,5 @@ echo ' <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 include './partials/_signupmodal.php';
 
 include './partials/_loginmodal.php';
+
 ?>

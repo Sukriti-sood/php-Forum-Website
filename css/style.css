@@ -1,21 +1,24 @@
-html, body {
+html,
+body {
     height: 100%;
-  }
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
-  }
-  .content {
+}
+
+.content {
     flex: 1 0 auto;
-    margin-top: 56px;
-  }
-  .footer {
+    margin-top: 54px;
+}
+
+.footer {
     flex-shrink: 0;
-  }
+}
 
-
-  @media screen and (max-width:190px) {
-      .content{
+@media screen and (max-width:190px) {
+    .content {
         margin-top: 94px;
-      }
-  }
+    }
+}

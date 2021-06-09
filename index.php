@@ -19,8 +19,7 @@
     <?php include './partials/_header.php' ?>
     <?php include './partials/_dbconnect.php' ?>
     <div class="content">
-
-        <!-- Slider -->
+        <?php include './partials/login_signup.php';?>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -32,12 +31,10 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/coding3.jpeg"
-                        class="d-block w-100" alt="...">
+                    <img src="./images/coding3.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/coding2.jpeg"
-                        class="d-block w-100" alt="...">
+                    <img src="./images/coding2.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="./images/coding1.jpeg" class="d-block w-100" alt="...">
@@ -88,10 +85,6 @@
                     ';
                 }
                 ?>
-          
-
-
-
             </div>
         </div>
 
