@@ -1,0 +1,12 @@
+
+newIssueWelcomeComment: >
+  Thanks for opening your first issue💖 here! Be sure to follow the issue template and [Code of Conduct](https://github.com/Harshal0902/Rudra/blob/main/CODE_OF_CONDUCT.md)!
+newPRWelcomeComment: >
+  Thanks for opening this pull request💖! Please check out our [contributing guidelines](https://github.com/Harshal0902/Rudra/blob/main/CONTRIBUTING.md).
+  
+  
+# Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
+# Comment to be posted to on pull requests merged by a first time user
+
+firstPRMergeComment: >
+   Congrats on merging your first pull request💖! Thanks a bunch. Feel free to take another [Issue](https://github.com/Harshal0902/Rudra/issues).
