@@ -7,7 +7,11 @@
   "projectOwner": "Sukriti-sood",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
   "imageSize": 100,
   "contributors": [
   ]
+  "repoType": "github",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "commitConvention": "angular",
+  "skipCi": true
