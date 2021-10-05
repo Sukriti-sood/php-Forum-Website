@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened, synchronize, edited]
     branches:
-      - main
+      - master
   pull_request_review_comment:
     types: [created, deleted]
 jobs:
