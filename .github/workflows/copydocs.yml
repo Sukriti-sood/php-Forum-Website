@@ -1,0 +1,22 @@
+name : Copy Docs
+on: 
+  push:
+    branches:
+      - master
+    paths:
+      - 'partials/**'
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: /partials/
+        dst_path: /partials/
+        dst_owner: Sukriti-sood
+        dst_repo_name: fastapi
+        dst_branch: main
+        src_branch: master         
