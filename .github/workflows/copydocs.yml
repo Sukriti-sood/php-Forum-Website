@@ -9,13 +9,16 @@ on:
 jobs:
   copy:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Copycat
       uses: andstor/copycat-action@v3
       with:
+        commit_message: "Syncing from anax"
+        clean: false
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: /partials/
-        dst_path: /partials/
+        src_path: ./partials
+        dst_path: /partials
         dst_owner: Sukriti-sood
         dst_repo_name: fastapi
         dst_branch: main
