@@ -9,4 +9,5 @@ if($_SESSION['loggedin'] = true)
     header("location: /php-forum-website");
 }
 
+
 ?>
