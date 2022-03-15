@@ -1,7 +1,6 @@
 <?php
     if(isset($_GET['signup-success']) && $_GET['signup-success']=="true"){
         echo '
-               
         <div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Holy guacamole!</strong> You can login 🎉.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
