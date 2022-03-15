@@ -16,7 +16,7 @@ jobs:
       with:
         commit_message: "Syncing from anax"
         clean: false
-        personal_token: ${{ secrets.PERSONAL_TOKEN}}
+        personal_token: ${{ secrets.Personal_Token}}
         src_path: partials
         dst_path: /partials
         dst_owner: Sukriti-sood
