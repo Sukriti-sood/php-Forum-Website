@@ -18,8 +18,10 @@ jobs:
         clean: false
         personal_token: ${{ secrets.Personal_Token }}
         src_path: partials
-        dst_path: /partials
+        dst_path: partials
         dst_owner: Sukriti-sood
         dst_repo_name: fastapi
         dst_branch: main
-        src_branch: master         
+        src_branch: master   
+        username: Sukriti-sood
+        email: soodsukriti1111@gmail.com
