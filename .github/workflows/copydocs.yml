@@ -18,7 +18,7 @@ jobs:
         clean: false
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: partials
-        dst_path: /partials
+        dst_path: /docs/anax
         dst_owner: Sukriti-sood
         dst_repo_name: fastapi
         dst_branch: main
