@@ -22,6 +22,4 @@ jobs:
         dst_owner: Sukriti-sood
         dst_repo_name: fastapi
         dst_branch: main
-        src_branch: master   
-        username: Sukriti-sood
-        email: soodsukriti1111@gmail.com
+        src_branch: master  
