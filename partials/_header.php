@@ -15,12 +15,15 @@ echo ' <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="./">Home</a>
       </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="./about.php">About</a>
       </li>
+      
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Categories
@@ -32,9 +35,11 @@ echo ' <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </li>
+      
       <li class="nav-item">
         <a class="nav-link " href="./contact.php" tabindex="-1" >Contact</a>
       </li>
+      
     </ul>
     
     <form class="d-flex">
