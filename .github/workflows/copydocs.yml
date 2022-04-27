@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - 'partials/**'
+      - 'partials/_header.php'
 
 jobs:
   copy:
@@ -17,8 +17,8 @@ jobs:
         commit_message: "Syncing from anax"
         clean: false
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: partials
-        dst_path: /docs/anax
+        src_path: partials/_header.php
+        dst_path: /docs/mgmt-hub/index.md
         dst_owner: Sukriti-sood
         dst_repo_name: fastapi
         dst_branch: main
